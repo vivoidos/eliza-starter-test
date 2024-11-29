@@ -3,5 +3,5 @@
 !character.ts
 .env
 node_modules
-
+dist
 db.sqlite
