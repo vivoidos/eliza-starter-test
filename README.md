@@ -13,3 +13,4 @@ Fill out the .env file with your own values.
 ```bash
 pnpm i && pnpm start
 ```
+# eliza-starter-test
