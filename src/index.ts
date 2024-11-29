@@ -56,11 +56,8 @@ export async function loadCharacters(
   let characterPaths = charactersArg
     ?.split(",")
     .map((path) => path.trim())
-    .map((path) => {
-      if (path[0] === "/") return path; // handle absolute paths
-      // assume relative to the project root where pnpm is ran
-      return `../${path}`;
-    });
+    .map((path) => `./${path}`);
+
   const loadedCharacters = [];
 
   if (characterPaths?.length > 0) {
